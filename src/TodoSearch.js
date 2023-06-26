@@ -1,8 +1,13 @@
 import React from 'react'
+import "./TodoSearch.css"
 
 function TodoSearch() {
     return(
-        <input placeholder='Terminar el curso' />
+        <>
+            <div className='searchContainer'>
+                <input className='search' placeholder='Search...'/>
+            </div>
+        </>
     )
 }
 

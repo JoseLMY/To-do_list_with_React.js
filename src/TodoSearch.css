@@ -1,0 +1,16 @@
+.searchContainer{
+    width: auto;
+    display: flex;
+    justify-content: center;
+}
+.search{
+    height: 46px;
+    width: calc(100vh - 100px);
+    color: rgb(0, 48, 96);
+    font-size: 21px;
+    padding-left: 16px;
+}
+.search::placeholder{
+    color: rgba(0, 48, 96, 0.564);
+    font-size: 21px;
+}
