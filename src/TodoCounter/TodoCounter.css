@@ -1,11 +1,8 @@
 .counter{
-    text-align: center;
     font-family: 'Bree Serif', serif;
-    font-size: 40px;
-    color: rgb(209, 255, 255);
-    width: auto;
-    height: 56px;
-    background-color: rgb(29, 72, 131);
-    border: 1px solid black;
-    border-radius: 16px;
+    text-align: center;
+    color: rgb(170, 170, 170);
+}
+.counterTasks{
+    color: rgba(0, 255, 255, 0.761);
 }

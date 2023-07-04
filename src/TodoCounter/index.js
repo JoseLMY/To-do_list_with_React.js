@@ -16,7 +16,7 @@ function TodoCounter() {
         )
     } else{
         return(
-            <h1 className='counter'>You have completed {completedTodos} of {totalTodos}  talks.</h1>
+            <h1 className='counter'>You have completed <span className='counterTasks'>{completedTodos}</span> of <span className='counterTasks'>{totalTodos}</span>  talks.</h1>
         )
     }
 }

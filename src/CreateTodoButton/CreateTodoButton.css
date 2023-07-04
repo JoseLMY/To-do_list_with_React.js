@@ -4,9 +4,9 @@
     justify-content: center;
 }
 .createTodoButton{
-    background-color: aquamarine;
+    background-color: rgba(0, 255, 255, 0.616);
     border: 2px solid black;
-    width: calc(100vh - 100px);
+    width: 240px;
     height: 45px;
     font-size: 20px;
     font-weight: 600;
@@ -15,6 +15,7 @@
     transition: all 0.5s;
 }
 .createTodoButton:hover{
-    background-color: rgb(172, 240, 218);
+    background-color: aqua;
+    box-shadow: 1px 1px 50px rgba(0, 255, 255, 0.212);
     cursor: pointer;
 }

@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
+
+
+form{
+    width: 90%;
+    max-width: 420px;
+    height: 60vh;
+    max-height: 420px;
+    background-color: rgb(20, 20, 20);
+    padding: 16px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    margin-top: 120px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 32px black;
+}
+.headerCreateTodo{
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 5%;
+    font-weight: 600;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+.textArea{
+    height: 240px;
+    resize: none;
+    outline: none;
+    background-color: rgb(36, 36, 36);
+    border: none;
+    padding: 8px;
+    box-sizing: border-box;
+    font-size: 20px;
+    margin-bottom: 40px;
+    color: white;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+.textArea::placeholder{
+    color: white;
+    font-size: 20px;
+}
+.textArea:focus{
+    border: 2px solid aqua;
+}
+.TodoForm-buttonContainer{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.TodoForm-button{
+    width: 160px;
+    height: 40px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 20px;
+    border: none;
+}
+.TodoForm-button--cancel{
+    background-color: rgb(20, 20, 20);
+    color: white;
+    border: 1px solid rgb(80, 80, 80);
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+
+    transition: all 0.5s;
+}
+.TodoForm-button--cancel:hover{
+    transform: scale(1.05);
+}
+.TodoForm-button--add{
+    background-color: aqua;
+    font-weight: 600;
+    cursor: pointer;
+
+    transition: all 0.5s;
+}
+.TodoForm-button--add:hover{
+    background-color: rgb(2, 111, 111);
+    transform: scale(1.08);
+}

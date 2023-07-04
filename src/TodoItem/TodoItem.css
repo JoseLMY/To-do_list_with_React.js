@@ -1,36 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
 
-
-
+/* Button checked */
 .completed{
     margin-right: 32px;
-    font-size: 26px;
     width: 42px;
     height: 42px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 30%;
-    border: 1px solid black;
-    background-color: rgba(51, 210, 213, 0.822);
-    color: white;
+    border-radius: 20%;
+    background-color: rgba(255, 255, 255, 0.663);
     cursor: pointer;
 
     transition: all 0.5s;
     font-family: 'Caprasimo', cursive;
 }
 .completed:hover{
-    background-color: rgb(127, 255, 227);
+    background-color: rgb(91, 208, 224);
+    box-shadow: 1px 1px 20px rgba(0, 255, 255, 0.478);
 }
 .completed--active{
-    cursor: pointer;
-    background-color: rgba(18, 113, 117, 0.854);
+    background-color: rgb(56, 56, 56);
     color: rgb(152, 152, 152);
 }
 .completed--active:hover{
-    background-color: rgba(18, 113, 117, 0.854);
+    background-color: rgba(56, 56, 56);
+    box-shadow: none;
 }
+
+
 .list{
     text-align: center;
     display: flex;
@@ -40,8 +39,7 @@
 .pending{
     text-align: center;
     font-family: 'Montserrat Alternates', sans-serif;
-    background-color: rgb(86, 168, 219);
-    border: 1px solid black;
+    background-color: white;
     padding: 6px;
     border-radius: 6px;
     font-size: 26px;
@@ -49,17 +47,12 @@
     transition: all 0.5s;
 }
 .pending:hover{
-    transform: scale(1.08);
     cursor: pointer;
-    background-color: rgb(174, 255, 228);
 }
 .pending--active{
     text-decoration: line-through;
-    background-color: rgb(51, 98, 126);
-}
-.pending--active:hover{
-    background-color: rgb(51, 98, 126);
-    transform: scale(1);
+    background-color: rgba(97, 97, 97, 0.511);
+    color: rgb(0, 0, 0);
 }
 .cancel{
     margin-left: 32px;
@@ -69,23 +62,25 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 30%;
-    background-color: rgba(136, 42, 42, 0.883);
+    border-radius: 8px;
+    background-color: rgb(177, 177, 177);
     color: azure;
-    border: 1px solid black;
+    border: none;
     cursor: pointer;
     
     transition: all 0.5s;
     font-family: 'Caprasimo', cursive;
 }
 .cancel:hover{
-    background-color: red;
+    background-color: rgba(123, 123, 123, 0.812);
+    box-shadow: 1px 1px 20px rgba(255, 255, 255, 0.392);
 }
 .cancel--active{
-    background-color: rgb(76, 13, 13);
+    background-color: rgb(46, 46, 46);
     cursor: pointer;
     color: rgb(156, 156, 156);
 }
 .cancel--active:hover{
-    background-color: rgb(76, 13, 13);
+    background-color: rgb(46, 46, 46) ;
+    box-shadow: none;
 }
