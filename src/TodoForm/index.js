@@ -13,8 +13,12 @@ function TodoForm() {
 
     const onSubmit = (e) => {   
         e.preventDefault()
-        addTodo(newTodoValue)
-        setOpenModal(false)
+        if(e.target.value == ""){
+            alert("Escribe algo antes")
+        } else{
+            addTodo(newTodoValue)
+            setOpenModal(false)
+        }
     }
     const onCancel = (e) => {
         setOpenModal(false)
@@ -24,7 +28,7 @@ function TodoForm() {
     }
 
     return (
-        <form onSubmit={onSubmit}>
+        <form onSubmit={onSubmit} className='form'>
             <label className='headerCreateTodo'>Task creator</label>
             <textarea
             className='textArea' 

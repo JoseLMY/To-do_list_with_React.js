@@ -26,6 +26,10 @@ function AppUI() {
             <TodoCounter/>
             <TodoSearch/>
             
+            <CreateTodoButton
+                setOpenModal={setOpenModal}
+            />
+
             <TodoList>
                 {loading && <TodosLoading />}
                 {error && <p className='error'>Oh no! There was a error!</p>}
@@ -40,10 +44,6 @@ function AppUI() {
                     />
                         ))}
             </TodoList>
-
-            <CreateTodoButton
-                setOpenModal={setOpenModal}
-            />
 
             {openModal && (
                 <Modal>
